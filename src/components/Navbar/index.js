@@ -1,23 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
+import {FaBars} from "react-icons/fa";
 import {ReactComponent as Logo} from "../../images/sanvika.svg"
-import { Nav, NavContainer, LogoContainer, Title, PagesContainer } from "./NavbarElements";
+import { Nav, NavContainer, LogoContainer, Title, MobileIcon, NavMenu, NavItem, NavLinks } from "./NavbarElements";
 
 const Navbar = (props) => {
     return (
         <Nav bg={props.state}>
             <NavContainer>
                 <LogoContainer>
-                    <Logo style={{height:"100%"}}/>
+                    <Logo style={{height:"90%"}}/>
                     <Title>Sanvika Foodzo</Title>
                 </LogoContainer>
-                <PagesContainer>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/menu">Menu</Link>
-                    <Link to="/franchise">Franchise</Link>
-                </PagesContainer>
+                <MobileIcon onClick={props.toggle}>
+                    <FaBars />
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks to="/">Home</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="/about">About</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="/menu">Menu</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="/franchise">Franchise</NavLinks>
+                    </NavItem>
+                </NavMenu>
             </NavContainer>
         </Nav>
     )

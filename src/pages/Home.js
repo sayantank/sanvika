@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import Navbar from "../components/Navbar"
+import SideBar from '../components/Sidebar';
 
 const Home = () => {
     const [scroll, setScroll] = useState("top");
@@ -13,10 +14,15 @@ const Home = () => {
             }
         })
     })
+
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    }
     return (
         <>
-            <Navbar state={scroll}/>
-            <h1>Home</h1>
+            <SideBar isOpen={isOpen} toggle={toggle}/>
+            <Navbar state={scroll} toggle={toggle}/>
         </>
     )
 }

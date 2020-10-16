@@ -6,11 +6,11 @@ import { Nav, NavContainer, LogoContainer, Title, MobileIcon, NavMenu, NavItem, 
 
 const Navbar = (props) => {
     return (
-        <Nav bg={props.state}>
+        <Nav bg={props.scroll}>
             <NavContainer>
                 <LogoContainer>
-                    <Logo style={{height:"90%"}}/>
-                    <Title>Sanvika Foodzo</Title>
+                    <Logo style={{height:"65%"}}/>
+                    <Title>Foodzo</Title>
                 </LogoContainer>
                 <MobileIcon onClick={props.toggle}>
                     <FaBars />

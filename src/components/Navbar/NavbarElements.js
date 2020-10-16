@@ -4,11 +4,11 @@ import {Link} from "react-router-dom";
 export const Nav = styled.div`
     position: sticky;
     top: 0;
-    height: 54px;
+    height: 60px;
     width: 100%;
+    //padding-top: 10px;
     z-index: 10;
-    margin-top: 12px;
-    background-color: ${props => props.bg === "top" ? "none" : "#ECFFDD"}
+    background: ${props => props.bg === "top" ? "none" : "rgba(236, 255, 221, 0.5)"};
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -16,7 +16,7 @@ export const Nav = styled.div`
 `
 
 export const NavContainer = styled.div`
-    max-width: 1100px;
+    max-width: 1280px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -39,7 +39,7 @@ export const LogoContainer = styled.div`
 export const Title = styled.h1`
     font-color: #1A3008;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 800;
     margin-left: 6px;
 `
 
@@ -63,7 +63,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -36px;
+    margin-right: -24px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -81,9 +81,9 @@ export const NavLinks = styled(Link)`
     padding: 0 1rem;
     cursor: pointer;
     color: #1A3008;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    margin-right: 36px;
+    margin-right: 24px;
     text-decoration: none;
 
     &.active {

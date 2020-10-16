@@ -22,7 +22,8 @@ const HeroImage = () => {
                     Crispy<br/>Chicken<br/>Burger
                 </FoodTitle>
                 <FoodPrice>
-                    ₹79
+                    <h2>₹79</h2>
+                    <h3>only</h3>
                 </FoodPrice>
             </TextWrapper>
         </HeroImageContainer>

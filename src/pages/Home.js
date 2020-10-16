@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <>
             <SideBar isOpen={isOpen} toggle={toggle}/>
-            <Navbar scroll={scroll} toggle={toggle}/>
+            <Navbar scroll={scroll} toggle={toggle} page="home"/>
             <Hero />
         </>
     )

@@ -17,16 +17,16 @@ const Navbar = (props) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="/">Home</NavLinks>
+                        <NavLinks to="/" bold={props.page === "home"}>Home</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/about">About</NavLinks>
+                        <NavLinks to="/about" bold={props.page === "about"}>About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/menu">Menu</NavLinks>
+                        <NavLinks to="/menu" bold={props.page === "Menu"}>Menu</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/franchise">Franchise</NavLinks>
+                        <NavLinks to="/franchise" bold={props.page === "franchise"}>Franchise</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavContainer>

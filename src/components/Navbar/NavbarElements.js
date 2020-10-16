@@ -8,7 +8,7 @@ export const Nav = styled.div`
     width: 100%;
     //padding-top: 10px;
     z-index: 10;
-    background: ${props => props.bg === "top" ? "none" : "rgba(236, 255, 221, 0.5)"};
+    background: ${props => props.bg === "top" ? "none" : "rgba(236, 255, 221, 0.7)"};
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -81,12 +81,9 @@ export const NavLinks = styled(Link)`
     padding: 0 1rem;
     cursor: pointer;
     color: #1A3008;
-    font-size: 0.8rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: ${props => props.bold ? "700" : "400"};
     margin-right: 24px;
     text-decoration: none;
 
-    &.active {
-        border-bottomg: 3px solid #1A3008;
-    }
 `

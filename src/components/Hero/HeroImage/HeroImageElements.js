@@ -30,16 +30,16 @@ export const FoodWrapper = styled.div`
 `
 
 export const Food = styled.img`
-    width: 100%;
+    max-width: 90%;
     height: auto;
     transform: rotate(-3deg);
     @media screen and (max-width: 768px) {
-        width: 80%;
+        max-width: 80%;
     }
     @media screen 
     and (min-width: 768px)
     and (max-width: 1024px) {
-        width: 60%;
+        max-width: 70%;
     }
 `
 
@@ -55,7 +55,7 @@ export const TextWrapper = styled.div`
     }
 `
 export const FoodTitle = styled.h1`
-    color: #49811C;
+    color: #417F56;
     font-size: 3rem;
     line-height: 54px;
 

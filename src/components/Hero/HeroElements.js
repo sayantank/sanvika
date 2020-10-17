@@ -15,9 +15,10 @@ export const HeroContainer = styled.div`
 export const Background = styled.div`
     position: absolute;
     width: 60vw;
-    height: 70%;
+    height: 80%;
     margin: 0 20vw;
     background: #ECFFDD;
+    border-radius: 5px;
     align-self: center;
     z-index: 1;
     @media screen and (max-width: 1024px) {
@@ -63,6 +64,7 @@ export const HeroText = styled.div`
         justify-content: center;
         align-items: center;
         margin-left: 0;
+        
         h1 {
             margin: -28px 0;
             font-size: 6rem;
@@ -84,23 +86,22 @@ export const HeroText = styled.div`
             margin: -8px 0;
             font-size: 2.2rem;
         }
-        margin-top: 36px;
     }
     
 `
 export const AppStoreContainer = styled.div`
     display: flex;
-    width: 100%;
+    max-width: 100%;
     margin-left: -12px;
     margin-top: 12px;
     @media screen 
     and (max-width: 1024px)
     and (min-width: 768px) {
-        width: 50%;
+        max-width: 50%;
         margin-left: 0;
     }
     @media screen and (max-width: 768px) {
-        width: 60%;
+        max-width: 50%;
         margin-left: 0;
     }
 `

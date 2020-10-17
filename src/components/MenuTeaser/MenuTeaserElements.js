@@ -7,7 +7,6 @@ export const MenuTeaserContainer = styled.div`
     width: 100%;
     background-image: url(${cooking});
     background-size: cover;
-    margin-bottom: 54px;
 `
 
 export const MenuTeaserWrapper = styled.div`

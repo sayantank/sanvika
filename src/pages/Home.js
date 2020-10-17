@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Connect from '../components/Connect';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import MenuTeaser from '../components/MenuTeaser';
 import Navbar from "../components/Navbar"
@@ -28,6 +30,8 @@ const Home = () => {
             <Hero />
             <Service />
             <MenuTeaser />
+            <Connect />
+            <Footer />
         </>
     )
 }

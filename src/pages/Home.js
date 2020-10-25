@@ -8,6 +8,10 @@ import Service from '../components/Service';
 import SideBar from '../components/Sidebar';
 
 const Home = () => {
+    useEffect(() => {
+        window.scroll({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+
     const [scroll, setScroll] = useState("top");
     useEffect(() => {
         document.addEventListener("scroll", () => {

@@ -6,6 +6,10 @@ import SideBar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
 const About = () => {
+    useEffect(() => {
+        window.scroll({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+
     const [scroll, setScroll] = useState("top");
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -21,6 +25,7 @@ const About = () => {
     const toggle = () => {
         setIsOpen(!isOpen);
     }
+
     return (
         <>
             <SideBar isOpen={isOpen} toggle={toggle}/>

@@ -3,6 +3,10 @@ import Navbar from "../components/Navbar"
 import SideBar from '../components/Sidebar';
 
 const Franchise = () => {
+    useEffect(() => {
+        window.scroll({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+
     const [scroll, setScroll] = useState("top");
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -21,7 +25,7 @@ const Franchise = () => {
     return (
         <>
             <SideBar isOpen={isOpen} toggle={toggle}/>
-            <Navbar scroll={scroll} toggle={toggle} page="menu"/>
+            <Navbar scroll={scroll} toggle={toggle} page="franchise"/>
         </>
     )
 }

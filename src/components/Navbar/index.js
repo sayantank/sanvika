@@ -23,7 +23,7 @@ const Navbar = (props) => {
                         <NavLinks to="/about" bold={props.page === "about"}>About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/menu" bold={props.page === "Menu"}>Menu</NavLinks>
+                        <NavLinks to="/menu" bold={props.page === "menu"}>Menu</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="/franchise" bold={props.page === "franchise"}>Franchise</NavLinks>

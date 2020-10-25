@@ -18,7 +18,7 @@ const AboutContent = () => {
                 </ImageWrapper>
                 <TextWrapper right>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at volutpat justo. Ut risus enim, mattis sed scelerisque suscipit, varius sed augue. Aenean scelerisque placerat turpis a feugiat. In hac habitasse platea dictumst. Vestibulum feugiat sit amet dui eget rhoncus.
+                        Sanvika Foodzo is a cloud kitchen, which offers friendly, convenient and delicious food delivery services. Our cuisine focuses on traditional family-style recipes with some of the finest local seasonal produce.
                     </p>
                 </TextWrapper>
             </ContentWrapper>
@@ -28,7 +28,7 @@ const AboutContent = () => {
                 </ImageWrapper>
                 <TextWrapper left>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at volutpat justo. Ut risus enim, mattis sed scelerisque suscipit, varius sed augue. Aenean scelerisque placerat turpis a feugiat. In hac habitasse platea dictumst. Vestibulum feugiat sit amet dui eget rhoncus.
+                    We are located in Manipal and serve you at your home with a quick delivery service. You can check our menu to find a large variety of delicious dishes.
                     </p>
                 </TextWrapper>
             </ContentWrapper>
@@ -38,7 +38,7 @@ const AboutContent = () => {
                 </ImageWrapper>
                 <TextWrapper right>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at volutpat justo. Ut risus enim, mattis sed scelerisque suscipit, varius sed augue. Aenean scelerisque placerat turpis a feugiat. In hac habitasse platea dictumst. Vestibulum feugiat sit amet dui eget rhoncus.
+                    Our service is available all day, everyday from breakfast to dinner. We also have combo meals and daily meal options for people looking for monthly packages.
                     </p>
                 </TextWrapper>
             </ContentWrapper>

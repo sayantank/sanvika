@@ -34,8 +34,7 @@ const Footer = () => {
                 <FooterColumn>
                     <FooterBlock>
                         <h1>FAQs</h1>
-                        <h2>Delivery Policies</h2>
-                        <h2>Privacy Policies</h2>
+                        <h2><a href="https://sanvikafoodzo.web.app/privacy">Privacy Policy</a></h2>
                         <h2>Franchise</h2>
                     </FooterBlock>
                 </FooterColumn>

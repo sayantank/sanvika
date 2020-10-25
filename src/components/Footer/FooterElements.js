@@ -47,6 +47,11 @@ export const FooterBlock = styled.div`
         margin-bottom: 8px;
         font-size: 1rem;
         font-weight: 400;
+
+        a {
+            text-decoration: none;
+            color: #ECFFDD;
+        }
     }
 
     h3 {

@@ -55,7 +55,7 @@ export const TextWrapper = styled.div`
     flex: 1;
     width: 85%;
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #407953;
         font-weight: 500;
         text-align: ${props => props.right ? "left" : "right"};
@@ -65,6 +65,7 @@ export const TextWrapper = styled.div`
         p {
             text-align: center;
             margin-top: 24px;
+            font-size: 1rem;
         }
     }
 `

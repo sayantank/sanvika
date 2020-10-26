@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 36px;
     @media screen and (max-width: 768px) {
         width: 85%;
     }
@@ -34,7 +34,7 @@ export const CategoryContainer = styled.div`
     background: ${props => props.active ? "#417f56" : "none"};
     transition: all .2s ease-in-out;
     &:hover {
-        transform: ${props => !props.active ? "scale(1.02)" : "none"};
+        transform: ${props => !props.active ? "scale(1.03)" : "none"};
     }
 `
 

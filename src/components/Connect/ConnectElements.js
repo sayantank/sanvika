@@ -46,7 +46,7 @@ export const ConnectWrapper = styled.div`
     }
 `
 
-export const ConnectForm = styled.div`
+export const ConnectForm = styled.form`
     width: 100%;
     display: flex;
     flex-direction: column;

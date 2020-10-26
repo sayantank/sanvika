@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Footer from '../components/Footer';
 import MenuContent from '../components/MenuContent';
 import Navbar from "../components/Navbar"
 import SideBar from '../components/Sidebar';
@@ -28,6 +29,7 @@ const Menu = () => {
             <SideBar isOpen={isOpen} toggle={toggle}/>
             <Navbar scroll={scroll} toggle={toggle} page="menu"/>
             <MenuContent />
+            <Footer />
         </>
     )
 }

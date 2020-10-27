@@ -61,7 +61,7 @@ export const ConnectInput = styled.input`
     padding: 12px;
     font-size: 1rem;
     color: #417f56;
-    
+
     &:focus {
         outline-width: 0;
     }
@@ -95,6 +95,10 @@ export const ConnectSubmit = styled.button`
     &:hover {
         transform: scale(1.02);
         font-weight: 600;
+    }
+
+    &:focus {
+        outline-width: 0;
     }
 
     @media screen and (max-width: 768px) {

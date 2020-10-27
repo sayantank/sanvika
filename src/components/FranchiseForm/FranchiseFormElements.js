@@ -125,6 +125,9 @@ export const SubmitButton = styled.button`
     &:hover {
         transform: scale(1.03);
     }
+    &:focus {
+        outline-width: 0;
+    }
 `
 
 export const ErrorMsg = styled.p`

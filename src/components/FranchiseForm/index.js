@@ -31,34 +31,34 @@ const FranchiseForm = () => {
     };
 
     const submitForm = (data) => {
-        console.log(data);
-        // fetch("https://us-central1-sanvikafoodzo.cloudfunctions.net/newFranchise", {
-        //     mode: "no-cors",
-        //     method: "POST",
-        //     credentials: "include",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         "Access-Control-Allow-Origin": "*",
-        //     },
-        //     body: JSON.stringify({
-        //         email: data.email.trim(),
-        //         name: data.name.trim(),
-        //         number: data.number.trim(),
-        //         market: data.market.trim(),
-        //         outlets: data.outlets.trim()
-        //     })
-        // })
-        // .then((res) => res.json())
-        // .then((json) => {
-        //     if(json.success) {
-        //         document.getElementById("sub-btn").innerHTML = "Successful";
-        //         setTimeout(() => {
-        //             document.getElementById("sub-btn").innerHTML = "Submit Request";
-        //         }, 3000)
-        //     } else {
-        //         alert("Internal Server Error");
-        //     }
-        // })
+        fetch("https://us-central1-sanvikafoodzo.cloudfunctions.net/newFranchise", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email: data.email.trim(),
+                name: data.name.trim(),
+                number: data.number.trim(),
+                market: data.market.trim(),
+                outlets: data.outlets.trim()
+            })
+        })
+        .then((res) => res.json())
+        .then((json) => {
+            // console.log(json);
+            if(json.success) {
+                document.getElementById("sub-btn").innerHTML = "Successful";
+                setTimeout(() => {
+                    document.getElementById("sub-btn").innerHTML = "Submit Request";
+                }, 3000)
+            } else {
+                alert("Internal Server Error");
+            }
+        })
+        .catch(e => {
+            alert("Internal Server Error");
+        })
     };
 
     return (

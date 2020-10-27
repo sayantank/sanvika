@@ -14,30 +14,29 @@ const Connect = () => {
     const { handleSubmit, register, errors } = useForm();
 
     const submitForm = (data) => {
-        console.log(data);
-        // fetch("https://us-central1-sanvikafoodzo.cloudfunctions.net/newFranchise", {
-        //     mode: "no-cors",
-        //     method: "POST",
-        //     credentials: "include",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         "Access-Control-Allow-Origin": "*",
-        //     },
-        //     body: JSON.stringify({
-        //         email: data.email.trim(),
-        //     })
-        // })
-        // .then((res) => res.json())
-        // .then((json) => {
-        //     if(json.success) {
-        //         document.getElementById("con-btn").innerHTML = "Successful";
-        //         setTimeout(() => {
-        //             document.getElementById("con-btn").innerHTML = "Submit";
-        //         }, 3000)
-        //     } else {
-        //         alert("Internal Server Error");
-        //     }
-        // })
+        fetch("https://us-central1-sanvikafoodzo.cloudfunctions.net/newFranchise", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email: data.email.trim()
+            })
+        })
+        .then((res) => res.json())
+        .then((json) => {
+            if(json.success) {
+                document.getElementById("con-btn").innerHTML = "Successful";
+                setTimeout(() => {
+                    document.getElementById("con-btn").innerHTML = "Submit";
+                }, 3000)
+            } else {
+                alert("Internal Server Error");
+            }
+        })
+        .catch(e => {
+            alert("Internal Server Error");
+        })
     };
 
     return (

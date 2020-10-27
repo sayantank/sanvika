@@ -16,31 +16,31 @@ const Service = () => {
             <h1>Our Services</h1>
             <ServiceWrapper>
                 <ServiceBlock>
-                    <Night style={{height: "50%", "margin-bottom": "24px"}} />
+                    <Night style={{height: "50%", marginBottom: "24px"}} />
                     <ServiceText>
                         <p>Late Night Delivery from 7pm to 4am</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", "margin-bottom": "24px"}} />
+                    <Night style={{height: "50%", marginBottom: "24px"}} />
                     <ServiceText>
                         <p>Late Night Delivery from 7pm to 4am</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", "margin-bottom": "24px"}} />
+                    <Night style={{height: "50%", marginBottom: "24px"}} />
                     <ServiceText>
                         <p>Late Night Delivery from 7pm to 4am</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", "margin-bottom": "24px"}} />
+                    <Night style={{height: "50%", marginBottom: "24px"}} />
                     <ServiceText>
                         <p>Late Night Delivery from 7pm to 4am</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", "margin-bottom": "24px"}} />
+                    <Night style={{height: "50%", marginBottom: "24px"}} />
                     <ServiceText>
                         <p>Late Night Delivery from 7pm to 4am</p>
                     </ServiceText>

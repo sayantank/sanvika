@@ -82,7 +82,7 @@ export const NavLinks = styled(Link)`
     cursor: pointer;
     color: #1A3008;
     font-size: 0.9rem;
-    font-weight: ${props => props.bold ? "700" : "400"};
+    font-weight: ${props => props.bold === "true" ? "700" : "400"};
     margin-right: 24px;
     text-decoration: none;
 

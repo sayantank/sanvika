@@ -126,3 +126,14 @@ export const SubmitButton = styled.button`
         transform: scale(1.03);
     }
 `
+
+export const ErrorMsg = styled.p`
+  color: #1a3008;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 14px;
+  margin-top: -18px;
+  display: ${(props) => props.msg === "" || props.msg === undefined ? "none" : "block"};
+`;

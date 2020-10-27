@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom";
 import {
     FooterContainer,
     FooterWrapper,
@@ -35,15 +35,14 @@ const Footer = () => {
                     <FooterBlock>
                         <h1>FAQs</h1>
                         <h2><a href="https://sanvikafoodzo.web.app/privacy">Privacy Policy</a></h2>
-                        <h2>Franchise</h2>
+                        <h2><Link to="/franchise">Franchise</Link></h2>
                     </FooterBlock>
                 </FooterColumn>
                 <FooterColumn>
                     <FooterBlock>
                         <h1>Follow us</h1>
-                        <h2>Instagram</h2>
-                        <h2>Facebook</h2>
-                        <h2>Twitter</h2>
+                        <h2><a href="https://www.instagram.com/sanvikafoodzo/">Instagram</a></h2>
+                        <h2><a href="https://www.facebook.com/Sanvikafoodzo008/">Facebook</a></h2>
                     </FooterBlock>
                 </FooterColumn>
             </FooterWrapper>

@@ -9,13 +9,56 @@ import {
     RegForm,
     NumberWrapper,
     FormInput,
-    SubmitButton
+    SubmitButton,
+    ErrorMsg
 } from "./FranchiseFormElements";
 
 const FranchiseForm = () => {
     const { handleSubmit, register, errors } = useForm();
+
+    const validatePhoneNo = (value) => {
+        if (isNaN(value) || value.trim().length !== 10) {
+          return false;
+        }
+        return true;
+    };
+
+    const validateOutlet = (value) => {
+        if (isNaN(value)) {
+          return false;
+        }
+        return true;
+    };
+
     const submitForm = (data) => {
-        console.log(data)
+        console.log(data);
+        // fetch("https://us-central1-sanvikafoodzo.cloudfunctions.net/newFranchise", {
+        //     mode: "no-cors",
+        //     method: "POST",
+        //     credentials: "include",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //         "Access-Control-Allow-Origin": "*",
+        //     },
+        //     body: JSON.stringify({
+        //         email: data.email.trim(),
+        //         name: data.name.trim(),
+        //         number: data.number.trim(),
+        //         market: data.market.trim(),
+        //         outlets: data.outlets.trim()
+        //     })
+        // })
+        // .then((res) => res.json())
+        // .then((json) => {
+        //     if(json.success) {
+        //         document.getElementById("sub-btn").innerHTML = "Successful";
+        //         setTimeout(() => {
+        //             document.getElementById("sub-btn").innerHTML = "Submit Request";
+        //         }, 3000)
+        //     } else {
+        //         alert("Internal Server Error");
+        //     }
+        // })
     };
 
     return (
@@ -30,15 +73,30 @@ const FranchiseForm = () => {
                 <FormContainer>
                     <RegForm onSubmit={handleSubmit(submitForm)}>
                         <FormInput name="name" type="text" ref={register({required: "This field is required"})} err={errors.name?.message} placeholder="Full Name" />
+                        <ErrorMsg msg={errors.name?.message}>
+                            {errors.name?.message}
+                        </ErrorMsg>
                         <FormInput name="email" type="email" ref={register({required: "This field is required"})} err={errors.email?.message} placeholder="Email Address" />
-                        <FormInput name="targ" type="text" ref={register({required: "This field is required"})} err={errors.targ?.message} placeholder="Target Market (State/City)" />
-                        <FormInput name="out" type="text" ref={register({required: "This field is required"})} err={errors.out?.message} placeholder="No. of outlets" />
+                        <ErrorMsg msg={errors.mail?.message}>
+                            {errors.mail?.message}
+                        </ErrorMsg>
+                        <FormInput name="market" type="text" ref={register({required: "This field is required"})} err={errors.market?.message} placeholder="Target Market (State/City)" />
+                        <ErrorMsg msg={errors.market?.message}>
+                            {errors.market?.message}
+                        </ErrorMsg>
+                        <FormInput name="outlets" type="text" ref={register({required: "This field is required", validate: (value) => validateOutlet(value) || "Invalid Input"})} err={errors.outlets?.message} placeholder="No. of outlets" />
+                        <ErrorMsg msg={errors.outlets?.message}>
+                            {errors.outlets?.message}
+                        </ErrorMsg>
                         <NumberWrapper>
                             <h1>+91</h1>
-                            <FormInput name="phone" type="text" ref={register({required: "This field is required"})} err={errors.phone?.message} placeholder="Mobile Number" />
+                            <FormInput name="number" type="text" ref={register({required: "This field is required", validate: (value) => validatePhoneNo(value) || "Invaid Mobile Number"})} err={errors.number?.message} placeholder="Mobile Number" />
                         </NumberWrapper>
-                        <SubmitButton type="submit">Submit Request</SubmitButton>
-                    </RegForm> 
+                        <ErrorMsg msg={errors.number?.message}>
+                            {errors.phone?.message}
+                        </ErrorMsg>
+                        <SubmitButton id="sub-btn" type="submit">Submit Request</SubmitButton>
+                    </RegForm>
                 </FormContainer>
             </MainContainer>
         </>

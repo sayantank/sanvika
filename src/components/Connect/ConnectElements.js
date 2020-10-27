@@ -60,9 +60,18 @@ export const ConnectInput = styled.input`
     margin-bottom: 6px;
     padding: 12px;
     font-size: 1rem;
-
+    color: #417f56;
+    
     &:focus {
         outline-width: 0;
+    }
+
+    ::placeholder,
+    ::-webkit-input-placeholder {
+        color: rgba(65,127,86,0.5);
+    }
+    :-ms-input-placeholder {
+        color: rgba(65,127,86,0.5);
     }
 
     @media screen and (max-width: 768px) {

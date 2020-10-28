@@ -5,7 +5,6 @@ export const MainContainer = styled.div`
     display: flex;
     min-height: 360px;
     margin-bottom: 54px;
-
     @media screen and (max-width: 768px) {
         flex-direction: column;
         margin-top: -36px;

@@ -1,0 +1,196 @@
+{
+    
+    "Pancake" : [
+        "Vanilla Pancake",
+        "Chocolate Pancake",
+        "Caremel Pancake",
+        "Banana Pancake",
+        "Peanut Butter Pancake"
+    ],
+    "French Toast" : [
+        "Vanilla Franch Toast",
+        "Peanut Butter Stuffed F. T",
+        "Jam Stuffed Franch Toast",
+        "Caremel Stuffed Franch Toast",
+        "Chocolate Stuffed F. T"
+    ],
+    "Waffles" : [
+        "Vanilla Waffels",
+        "Chocolate Waffels",
+        "Caremel Waffels"
+    ],
+    "Omelette" : [
+        "Plain Omelette",
+        "Cheese Omelette",
+        "Mushroom & Chesse Omelette",
+        "Veg Omelette",
+        "Masala Omelette",
+        "Onion & Cheese Omelette",
+        "Fried Egg",
+        "Bulls Eye",
+        "Scrambled Egg",
+        "Chesse Scrambled Egg",
+        "Egg Bhurji"
+    ],
+    "Indian Touch" : [
+        "Plain Dosa",
+        "Set Dosa",
+        "Tupa Dosa",
+        "Masala Dosa",
+        "Maysor Masala Dosa",
+        "Plain Idli",
+        "Idli Vada",
+        "Vada",
+        "Mysor Bonda",
+        "Aloo Parata",
+        "Gobi Parata",
+        "Methi Parata",
+        "Veg Parata",
+        "Paneer Parata",
+        "Chole Bhatura",
+        "Puri Bhaji"
+    ],
+    "Trendy" : [
+        "Cheese Chilly Toast",
+        "French Fries",
+        "Potato Wedges",
+        "Bread Roll"
+    ],
+    "Burgers" : [
+        "Crispy Chicken Burger",
+        "Fire Pan Chicken Burger",
+        "Arabic Lamb Burger",
+        "Mexican Veg Burger",
+        "Crispy Potato & Cheeseburger",
+        "Deshi Aloo Tikki Burger",
+        "Deshi Chicken Tikka Burger",
+        "Plain Chicken Burger",
+        "Plain Veg Burger"
+    ],
+    "Sandwich" : [
+        "Street Fighter Sandwich",
+        "Crispy Chicken Sandwich",
+        "Grilled Veggie Sandwich",
+        "Grilled Chicken Sandwich",
+        "Grilled Chicken Tikka Sandwich",
+        "Grilled Paneer Tikka Sandwich",
+        "Chicken & Cheese Sandwich",
+        "Plain Cheese Sandwich",
+        "Bbq Chicken Sandwich",
+        "Egg & Cheese Sandwich"
+    ],
+    "Grill And Bbq" : [
+        "Crispy Fried Chicken",
+        "Spicy Fried Chicken",
+        "Spicy Oat Crusted Chicken",
+        "Spicy Chicken Wings",
+        "Bqq Chicken Wings",
+        "Honey Lemon Wings",
+        "Garlic Ginger Wings",
+        "Crispy Sriracha Wings",
+        "Crispy Teriyaki Wings",
+        "Scampi Tarter ",
+        "Fish And Chips"
+    ],
+    "Rolls & Wraps" : [
+        "Tikka Roll (Chicken/ Paneer)",
+        "Shawarma Roll (Chicken/ Paneer)",
+        "Schezwan Roll (Chicken/ Paneer)",
+        "Chicken Keema Roll",
+        "Egg Roll"
+    ],
+    "Mocktail / Virgin Drinks" : [
+        "Virgin Watermelon Margarita",
+        "Mango Mule",
+        "Strawberry Mojito",
+        "Bluberry Mojito",
+        "Pineapple Ginger Beer",
+        "Pineapple Cobbler",
+        "Lemongrass Iced Tea.",
+        "Ginger Peach Iced Tea"
+    ],
+    "Shakes & Smoothies" : [
+        "Banana Milkshake",
+        "Vanilla Milk Shake",
+        "Strawberry Milk Shake",
+        "Butterscoth Milk Shake",
+        "Oreo Milk Shake",
+        "Apple Milk Shake",
+        "Mango Milk Shake",
+        "Cold Coffee",
+        "Cold Coffee With Ice Cream",
+        "Chocolate Milk Shake"
+    ],
+    "Fresh Fruit Juice" : [
+        "Orange Juice",
+        "Sweet Lime Juice",
+        "Watermelon Juice",
+        "Musk Melon Juice",
+        "Pineapple"
+    ],
+    "Lassi" : [
+        "Malai Lassi",
+        "Strawbeery Lassi",
+        "Mango Lassi",
+        "Banana Lassi",
+        "Safron Lassi",
+        "Dry Fruit Lassi"
+    ],
+    "Pasta (Veg /Chicken)" : [
+        "Alfrado Pasta",
+        "Arabiata Pasta",
+        "Aglo Ogle Pasta",
+        "Pesto Pasta",
+        "Three Cheese Pasta",
+        "Fungi Ala Creame"
+    ]
+    ,
+    "Continental Mains" : [
+        "Stuffed Grilled Chicken",
+        "Grilled Chicken Steak",
+        "Paneer Steak",
+        "Grilled Fish With Orange Sauce",
+        "Grilled Fish Lemon Butter",
+        "Veg Augratin",
+        "Cauliflour Mourne",
+        "Chicken Parmesiana",
+        "Abourgin Parmesiana",
+        "Exotic Veggi Augratin"
+    ],
+    "Pizza (Small/ Medium/ Large)" : [
+        "Margarita Pizza",
+        "Murshroom Pizza",
+        "Veggi Pizza",
+        "Lamb Pepproni Pizza",
+        "Peri Peri Chicken Pizza",
+        "Hawain Chicken Pizza",
+        "Bbq Chicken Pizza"
+    ],
+    "Fries Mania" : [
+        "Bbq Fries",
+        "Chat Pata Cheese Fries Mexican Fries",
+        "Peri Peri Fries"
+    ],
+    "Dessert" : [
+        "Dark Choco Fudge",
+        "Choco Cookie Crumble",
+        "Brownie",
+        "Gajar Ka Halwa",
+        "Choco Temptaion",
+        "Cream Fruit Blast",
+        "Caremel Love"
+    ],
+    "Combo" : [
+        "Chicken Burger Combo (Choice Of Any 1 Chicken Burger +1 Drink + 1 Fries)",
+        "Veg Burger Combo (Choice Of Any 1 Veg Burger +1 Drink + 1 Fries)",
+        "Lamb Burger Combo (Choice Of Any 1 Lamb Burger +1 Drink + 1 Fries)",
+        "Fried Chicken Combo (Choice Of Any 4 Pcs Fried Chicken +1 Drink + 1 Fries)",
+        "Fired Wings Combo (Choice Of Any 5 Pcs Chicken Wings +1 Drink + 1 Fries)",
+        "Chicken Sandwich Combo (Choice Of Any 1 Chicken Sandwich +1 Drink + 1 Fries)",
+        "Veg Sandwich Combo (Choice Of Any 1 Veg Sandwich +1 Drink + 1 Fries)",
+        "Chicken Wraps Combo (Choice Of Any 1 Chicken Wrap +1 Drink + 1 Fries)",
+        "Paneer Wraps Combo (Choice Of Any 1 Paneer Wrap +1 Drink + 1 Fries)",
+        "Pizza Veg Combo (Choice Of Any 1 Small Size Pizza +1 Drink + 1 Fries)",
+        "Pizza Non Veg Combo (Choice Of Any 1 Small Size Pizza +1 Drink + 1 Fries)"
+    ]
+}

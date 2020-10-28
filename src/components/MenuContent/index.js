@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import MenuData from "../../data/MenuData"
+import React, { useState } from 'react'
+import MenuData from "../../data/menu.json"
 
 import {
     MainContainer, 
@@ -10,18 +10,14 @@ import {
 } from "./MenuContentElements";
 
 const MenuContent = () => {
-    const Categories = ["Starters", "Burgers", "Main Course", "Wraps", "Drinks", "Desserts"]
-    const [active, setActive] = useState({
-        "Starters": false,
-        "Burgers": false,
-        "Main Course": false,
-        "Wraps": false,
-        "Drinks": false,
-        "Desserts": false
-    })
-    useEffect(() => {
-        console.log(active)
-    }, [active])
+    const Categories = Object.keys(MenuData)
+
+    let startState = {}
+    for(const key of Categories) {
+        startState[key] = false
+    }
+
+    const [active, setActive] = useState(startState)
 
     const toggle = (category) => {
         let newState = {...active}
@@ -35,13 +31,13 @@ const MenuContent = () => {
                     <h1>Our Menu</h1>
                 </TitleWrapper>
                 {
-                    Categories.map((category) => 
-                        <CategoryContainer active={active[category]}>
+                    Categories.map((category, i) => 
+                        <CategoryContainer key={i} active={active[category]}>
                             <HeaderWrapper onClick={() => toggle(category)} active={active[category]}>
                                 {category}
                             </HeaderWrapper>
                             {
-                                MenuData[category].map((item) => <ItemWrapper active={active[category]}>{item}</ItemWrapper>)
+                                MenuData[category].map((item, i) => <ItemWrapper key={i} active={active[category]}>{item}</ItemWrapper>)
                             }
                         </CategoryContainer>
                     )

@@ -47,6 +47,7 @@ export const HeaderWrapper = styled.div`
     color: ${props => props.active ? "#fff" : "#417f56"};
     padding: 14px 0;
     cursor: pointer;
+    text-align: center;
     
 `
 
@@ -59,4 +60,5 @@ export const ItemWrapper = styled.div`
     color: #417f56;
     background: #fff;
     padding: 14px 0;
+    text-align: center;
 `

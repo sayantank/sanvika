@@ -18,7 +18,7 @@ const Menu = () => {
                 setScroll("bot")
             }
         })
-    })
+    }, [])
 
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => {

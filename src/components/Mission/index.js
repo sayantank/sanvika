@@ -11,8 +11,8 @@ const Mission = () => {
             <MainContainer>
                 <TextWrapper>
                     <h1>Our Mission</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sem eget ipsum iaculis posuere ac a enim. Nulla ac viverra quam. Ut sed arcu at enim auctor facilisis ut.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sem eget ipsum iaculis posuere ac a enim. Nulla ac viverra quam. Ut sed arcu at enim auctor facilisis ut.</p>
+                    <p>Grow with Sanvika Foodzo Franchises.<br/>Launch and grow your food delivery business.<br/>A cost effective way to launch.<br/>Increase revenues with reduced risk and operating costs.</p>
+                    <p>Our technology is built for restaurateurs, chefs, and culinary teams to launch and grow your business. Our simple tablet solution allows you to have your own delivery app which help you save your aggregator hosting commission</p>
                 </TextWrapper>
             </MainContainer>
         </>

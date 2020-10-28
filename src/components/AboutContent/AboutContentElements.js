@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
         font-weight: 700;
         margin-bottom: 36px;
     }
-    
+    margin-bottom: 96px;
 `
 
 export const ContentWrapper = styled.div`

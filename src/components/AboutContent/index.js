@@ -14,7 +14,7 @@ const AboutContent = () => {
             <h1>About us</h1>
             <ContentWrapper right>
                 <ImageWrapper>
-                    <img src={food} style={{"max-width": "85%", height: "auto", "border-radius": "5px"}} alt="/" />
+                    <img src={food} style={{maxWidth: "85%", height: "auto", borderRadius: "5px"}} alt="/" />
                 </ImageWrapper>
                 <TextWrapper right>
                     <p>
@@ -24,7 +24,7 @@ const AboutContent = () => {
             </ContentWrapper>
             <ContentWrapper left>
                 <ImageWrapper>
-                    <img src={food} style={{"max-width": "85%", height: "auto", "border-radius": "5px"}} alt="/" />
+                    <img src={food} style={{maxWidth: "85%", height: "auto", borderRadius: "5px"}} alt="/" />
                 </ImageWrapper>
                 <TextWrapper left>
                     <p>
@@ -34,7 +34,7 @@ const AboutContent = () => {
             </ContentWrapper>
             <ContentWrapper right>
                 <ImageWrapper>
-                    <img src={food} style={{"max-width": "85%", height: "auto", "border-radius": "5px"}} alt="/" />
+                    <img src={food} style={{maxWidth: "85%", height: "auto", borderRadius: "5px"}} alt="/" />
                 </ImageWrapper>
                 <TextWrapper right>
                     <p>

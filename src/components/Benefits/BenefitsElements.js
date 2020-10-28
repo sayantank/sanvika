@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-    width: 100%;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 54px;
-    padding-top: 36px;
+    padding: 36px;
     h1 {
         font-size: 1.6rem;
         color: #1a3008;
@@ -21,28 +20,34 @@ export const BenefitsWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: center;
-    width: 80%;
-    margin-top: 32px;
+    width: 90%;
+    padding: 20px;
 `
 
 export const BenefitsBlock = styled.div`
-    margin-bottom: 24px;
-    padding: 24px 18px;
+    margin-bottom: 12px;
+    padding: 18px;
     flex: 1;
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 240px;
+    height: auto;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 `
 
-export const BenefitsText = styled.div`
+export const BenefitsTitle = styled.h2`
+    font-size: 1.2rem;
+    color: #417f56;
+    text-align: center;
+`
+
+export const BenefitsText = styled.p`
     text-align: center;
     margin-top: 12px;
-    p {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #417F56;
-        line-height: 1.3rem;
-    }
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #417F56;
+    line-height: 1.3rem;
+    padding: 12px;
 `

@@ -30,7 +30,7 @@ export const ServiceWrapper = styled.div`
 export const ServiceBlock = styled.div`
     //background: #fafafa;
     margin-bottom: 24px;
-    padding: 24px 18px;
+    padding: 18px 18px;
     flex: 1;
     max-width: 200px;
     display: flex;
@@ -41,10 +41,9 @@ export const ServiceBlock = styled.div`
 
 export const ServiceText = styled.div`
     text-align: center;
-    margin-top: 12px;
     p {
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
         color: #417F56;
         line-height: 1.3rem;
     }

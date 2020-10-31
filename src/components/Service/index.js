@@ -1,6 +1,10 @@
 import React from 'react';
 
 import {ReactComponent as Night} from "../../images/night.svg"
+import {ReactComponent as Food} from "../../images/food.svg"
+import {ReactComponent as Phone} from "../../images/phone.svg"
+import {ReactComponent as Stop} from "../../images/stop.svg"
+import {ReactComponent as All} from "../../images/all.svg"
 
 import {
     ServiceContainer,
@@ -16,33 +20,33 @@ const Service = () => {
             <h1>Our Services</h1>
             <ServiceWrapper>
                 <ServiceBlock>
-                    <Night style={{height: "50%", marginBottom: "24px"}} />
+                    <Night style={{height: "100%", marginBottom: "18px"}} />
                     <ServiceText>
-                        <p>Late Night Delivery from 7pm to 4am</p>
+                        <p>Late Night Delivery From 7pm to 4am</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", marginBottom: "24px"}} />
+                    <Phone style={{height: "100%", marginBottom: "18px"}} />
                     <ServiceText>
-                        <p>Late Night Delivery from 7pm to 4am</p>
+                        <p>Order On Our Mobile App</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", marginBottom: "24px"}} />
+                    <Stop style={{height: "100%", marginBottom: "18px"}} />
                     <ServiceText>
-                        <p>Late Night Delivery from 7pm to 4am</p>
+                        <p>Delivery Within 40 Mins</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", marginBottom: "24px"}} />
+                    <All style={{height: "100%", marginBottom: "18px"}} />
                     <ServiceText>
-                        <p>Late Night Delivery from 7pm to 4am</p>
+                        <p>Food For Every Kind Of Hunger</p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>
-                    <Night style={{height: "50%", marginBottom: "24px"}} />
+                    <Food style={{height: "100%", marginBottom: "18px"}} />
                     <ServiceText>
-                        <p>Late Night Delivery from 7pm to 4am</p>
+                        <p>Place Bulk Orders Through Our App</p>
                     </ServiceText>
                 </ServiceBlock>
             </ServiceWrapper>

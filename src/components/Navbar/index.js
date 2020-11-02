@@ -1,15 +1,23 @@
 import React from 'react'
+import {useHistory} from "react-router-dom";
 
 import {FaBars} from "react-icons/fa";
 import {ReactComponent as Logo} from "../../images/sanvika.svg"
 import { Nav, NavContainer, LogoContainer, Title, MobileIcon, NavMenu, NavItem, NavLinks } from "./NavbarElements";
 
 const Navbar = (props) => {
+
+    const history = useHistory();
+
+    const redirectHome = () => {
+        history.push("/");
+    }
+
     return (
         <Nav bg={props.scroll}>
             <NavContainer>
                 <LogoContainer>
-                    <Logo style={{height:"65%"}}/>
+                    <Logo style={{height:"65%", cursor:"pointer"}} onClick={redirectHome}/>
                     <Title>Foodzo</Title>
                 </LogoContainer>
                 <MobileIcon onClick={props.toggle}>

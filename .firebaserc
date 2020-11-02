@@ -1,5 +1,17 @@
 {
   "projects": {
-    "default": "sanvika-web"
+    "default": "sanvikafoodzo"
+  },
+  "targets": {
+    "sanvikafoodzo": {
+      "hosting": {
+        "master": [
+          "sanvikafoodzo"
+        ],
+        "about": [
+          "about-sanvika-foodzo"
+        ]
+      }
+    }
   }
 }

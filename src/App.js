@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
 import Franchise from "./pages/Franchise";
+import Terms from "./pages/Terms";
+import Privacy from './pages/Privacy';
+import Why from './pages/Why';
 
 function App() {
   return (
@@ -20,6 +23,15 @@ function App() {
         </Route>
         <Route path="/franchise">
           <Franchise />
+        </Route>
+        <Route path="/terms">
+          <Terms />
+        </Route>
+        <Route path="/privacy">
+          <Privacy />
+        </Route>
+        <Route path="/why">
+          <Why />
         </Route>
         <Route path="/">
           <Home />

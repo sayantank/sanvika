@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const MainContainer = styled.div`
     width: 100%;
-    min-height: 320px;
+    min-height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,5 +37,26 @@ export const TextWrapper = styled.div`
         p {
             margin-bottom: 16px;
         }
+    }
+`
+
+export const WhyRedirect = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    background: #417F56;
+    padding: 10px 36px;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: all .2s ease-in-out;
+    font-size: 1rem;
+    margin: 24px 0;
+    &:hover {
+        transform: scale(1.05);
+        font-weight: 600;
     }
 `

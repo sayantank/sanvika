@@ -72,28 +72,28 @@ const FranchiseForm = () => {
                 </TextContainer>
                 <FormContainer>
                     <RegForm onSubmit={handleSubmit(submitForm)}>
-                        <FormInput name="name" type="text" ref={register({required: "This field is required"})} err={errors.name?.message} placeholder="Full Name" />
+                        <FormInput name="name" type="text" ref={register({required: "This field is required"})} err={errors.name?.message} placeholder="*Full Name" />
                         <ErrorMsg msg={errors.name?.message}>
                             {errors.name?.message}
                         </ErrorMsg>
-                        <FormInput name="email" type="email" ref={register({required: "This field is required"})} err={errors.email?.message} placeholder="Email Address" />
+                        <FormInput name="email" type="email" ref={register({required: "This field is required"})} err={errors.email?.message} placeholder="*Email Address" />
                         <ErrorMsg msg={errors.mail?.message}>
                             {errors.mail?.message}
                         </ErrorMsg>
-                        <FormInput name="market" type="text" ref={register({required: "This field is required"})} err={errors.market?.message} placeholder="Target Market (State/City)" />
+                        <FormInput name="market" type="text" ref={register({required: "This field is required"})} err={errors.market?.message} placeholder="*Target Market (State/City)" />
                         <ErrorMsg msg={errors.market?.message}>
                             {errors.market?.message}
                         </ErrorMsg>
-                        <FormInput name="outlets" type="text" ref={register({required: "This field is required", validate: (value) => validateOutlet(value) || "Invalid Input"})} err={errors.outlets?.message} placeholder="No. of outlets" />
+                        <FormInput name="outlets" type="text" ref={register({required: "This field is required", validate: (value) => validateOutlet(value) || "Invalid Input"})} err={errors.outlets?.message} placeholder="*No. of outlets" />
                         <ErrorMsg msg={errors.outlets?.message}>
                             {errors.outlets?.message}
                         </ErrorMsg>
                         <NumberWrapper>
                             <h1>+91</h1>
-                            <FormInput name="number" type="text" ref={register({required: "This field is required", validate: (value) => validatePhoneNo(value) || "Invaid Mobile Number"})} err={errors.number?.message} placeholder="Mobile Number" />
+                            <FormInput name="number" type="text" ref={register({required: "This field is required", validate: (value) => validatePhoneNo(value) || "Invalid Mobile Number"})} err={errors.number?.message} placeholder="*Mobile Number" />
                         </NumberWrapper>
                         <ErrorMsg msg={errors.number?.message}>
-                            {errors.phone?.message}
+                            {errors.number?.message}
                         </ErrorMsg>
                         <SubmitButton id="sub-btn" type="submit">Submit Request</SubmitButton>
                     </RegForm>

@@ -25,10 +25,14 @@ const Hero = () => {
                     <h2>in Manipal.</h2>
                     <AppStoreContainer>
                         <AppStore>
-                            <img src={playstore} style={{width: "100%", height: "auto"}} alt="/" />
+                            <a href="https://play.google.com/store/apps/details?id=sanvika.foodzo.com" rel="noopener noreferrer" target="_blank">
+                                <img src={playstore} style={{width: "100%", height: "auto"}} alt="/" />
+                            </a>
                         </AppStore>
                         <AppStore>
-                            <img src={appstore} style={{width: "100%", height: "auto"}} alt="/" />
+                            <a href="https://apps.apple.com/in/app/sanvika-foodzo/id1515431959" rel="noopener noreferrer" target="_blank">
+                                <img src={appstore} style={{width: "100%", height: "auto"}} alt="/" />
+                            </a>
                         </AppStore>
                     </AppStoreContainer>
                 </HeroText>

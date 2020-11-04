@@ -28,7 +28,7 @@ const Service = () => {
                 <ServiceBlock>
                     <Phone style={{height: "100%", marginBottom: "18px"}} />
                     <ServiceText>
-                        <p>Order On Our Mobile App</p>
+                        <p>Order On Our <a href="https://onelink.to/w4d2wn" rel="noopener noreferrer" target="_blank" style={{textDecoration: "none", color: "#417f56"}}><b>Mobile App</b></a></p>
                     </ServiceText>
                 </ServiceBlock>
                 <ServiceBlock>

@@ -106,3 +106,27 @@ export const ConnectSubmit = styled.button`
         font-size: 0.9rem;
     }
 `
+
+export const NumberWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    h1 {
+        font-size: 1.3rem;
+        color: #417f56;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+`
+
+export const ErrorMsg = styled.p`
+  color: #1a3008;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 14px;
+  margin-top: -12px;
+  display: ${(props) => props.msg === "" || props.msg === undefined ? "none" : "block"};
+`;

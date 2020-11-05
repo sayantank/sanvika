@@ -18,7 +18,7 @@ const Navbar = (props) => {
             <NavContainer>
                 <LogoContainer>
                     <Logo style={{height:"65%", cursor:"pointer"}} onClick={redirectHome}/>
-                    <Title>Foodzo</Title>
+                    <Title>Sanvika</Title>
                 </LogoContainer>
                 <MobileIcon onClick={props.toggle}>
                     <FaBars />

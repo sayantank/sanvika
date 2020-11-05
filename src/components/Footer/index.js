@@ -34,16 +34,17 @@ const Footer = () => {
                 <FooterColumn>
                     <FooterBlock>
                         <h1>FAQs</h1>
-                        <h2><Link to="/terms">Terms and Conditions</Link></h2>
-                        <h2><Link to="/privacy">Privacy Policy</Link></h2>
+                        <h2><Link to="/terms" rel="noopener noreferrer" target="_blank">Terms and Conditions</Link></h2>
+                        <h2><Link to="/privacy" rel="noopener noreferrer" target="_blank">Privacy Policy</Link></h2>
                         <h2><Link to="/franchise">Franchise</Link></h2>
                     </FooterBlock>
                 </FooterColumn>
                 <FooterColumn>
                     <FooterBlock>
                         <h1>Follow us</h1>
-                        <h2><a href="https://www.instagram.com/sanvikafoodzo/">Instagram</a></h2>
-                        <h2><a href="https://www.facebook.com/Sanvikafoodzo008/">Facebook</a></h2>
+                        <h2><a href="https://wa.me/message/BGU6HEM7N3H7A1" rel="noopener noreferrer" target="_blank">Whatsapp</a></h2>
+                        <h2><a href="https://www.instagram.com/sanvikafoodzo/" rel="noopener noreferrer" target="_blank">Instagram</a></h2>
+                        <h2><a href="https://www.facebook.com/Sanvikafoodzo008/" rel="noopener noreferrer" target="_blank">Facebook</a></h2>
                     </FooterBlock>
                 </FooterColumn>
             </FooterWrapper>

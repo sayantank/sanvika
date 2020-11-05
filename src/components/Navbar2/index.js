@@ -17,7 +17,7 @@ const Navbar2 = (props) => {
             <NavContainer>
                 <LogoContainer>
                     <Logo style={{height:"65%", cursor:"pointer"}} onClick={redirectHome}/>
-                    <Title>Foodzo {props.title}</Title>
+                    <Title>Sanvika {props.title}</Title>
                 </LogoContainer>
             </NavContainer>
         </Nav>

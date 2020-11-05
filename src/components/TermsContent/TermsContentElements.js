@@ -8,10 +8,13 @@ export const MainContainer = styled.div`
 `
 
 export const Wrapper = styled.div`
-    width: 80%;
+    max-width: 70%;
     padding: 18px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 768px){
+        min-width: 80%;
+    }
 `
 
 export const SubHeader = styled.h1`

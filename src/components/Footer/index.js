@@ -15,9 +15,9 @@ const Footer = () => {
                 <FooterColumn>
                     <FooterBlock>
                         <h1>Contact us</h1>
-                        <h2>sanvika@gmail.com</h2>
-                        <h2>+91 7865674563</h2>
-                        <h3>Available from 7pm to 3am.</h3>
+                        <h2>sanvikatradezo@gmail.com</h2>
+                        <h2>+91 8296989111</h2>
+                        <h3>Available from 8am to 11pm.</h3>
                     </FooterBlock>
                 </FooterColumn>
                 <FooterColumn>
